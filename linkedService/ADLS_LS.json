@@ -1,0 +1,12 @@
+{
+	"name": "ADLS_LS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://bhelsa.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDFFNjVGQUJCLUU4QzQtNDU0Mi04NERCLUE2Mjc4RDkzRDc2NF8xMjk3ZTFjOS1mMDYzLTRjNjItYTM3ZC03MWFjYTk3YmNmNzAiDQp9"
+		}
+	}
+}
