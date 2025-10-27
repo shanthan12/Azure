@@ -1,0 +1,9 @@
+{
+	"name": "BHELDataFactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "604b37c2-403a-45c2-89b4-03ea0e91dd7b",
+		"tenantId": "59ede54d-d618-4aaa-904e-639e7ae2a27a"
+	}
+}
