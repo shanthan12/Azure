@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "BHELDataFactory"
+		},
+		"ADLS_LS_accountKey": {
+			"value": ""
+		},
+		"Desti_LS_accountKey": {
+			"value": ""
+		},
+		"SQLDB_LS_password": {
+			"value": ""
+		},
+		"source_LS_accountKey": {
+			"value": ""
+		},
+		"ADLS_LS_properties_typeProperties_url": {
+			"value": "https://bhelsa.dfs.core.windows.net/"
+		},
+		"Desti_LS_properties_typeProperties_url": {
+			"value": "https://bhelsa.dfs.core.windows.net/"
+		},
+		"SQLDB_LS_properties_typeProperties_server": {
+			"value": "bhelserver2.database.windows.net"
+		},
+		"SQLDB_LS_properties_typeProperties_database": {
+			"value": "bheldb"
+		},
+		"SQLDB_LS_properties_typeProperties_userName": {
+			"value": "admin123"
+		},
+		"source_LS_properties_typeProperties_url": {
+			"value": "https://bhelsa.dfs.core.windows.net/"
+		}
+	}
+}
