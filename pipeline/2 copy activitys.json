@@ -50,7 +50,10 @@
 				"outputs": [
 					{
 						"referenceName": "ADLS_DS",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"foldername": "customer"
+						}
 					}
 				]
 			},
@@ -109,7 +112,10 @@
 				"outputs": [
 					{
 						"referenceName": "ADLS_DS",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"foldername": "product data"
+						}
 					}
 				]
 			}

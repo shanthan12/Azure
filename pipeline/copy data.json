@@ -50,7 +50,10 @@
 				"outputs": [
 					{
 						"referenceName": "ADLS_DS",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"foldername": "unknown"
+						}
 					}
 				]
 			}
