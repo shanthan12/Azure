@@ -17,7 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
-						"sqlReaderQuery": "select count(*) from saleslt.product",
+						"sqlReaderQuery": "select count(*) count from saleslt.product",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
@@ -45,9 +45,27 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@greater(activity('Lookup1').output.firstRow,1000)",
+						"value": "@greater(activity('Lookup1').output.firstRow.count,1000)",
 						"type": "Expression"
 					},
+					"ifFalseActivities": [
+						{
+							"name": "Execute customer Pipeline",
+							"type": "ExecutePipeline",
+							"dependsOn": [],
+							"policy": {
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"pipeline": {
+									"referenceName": "customer Pipeline",
+									"type": "PipelineReference"
+								},
+								"waitOnCompletion": true
+							}
+						}
+					],
 					"ifTrueActivities": [
 						{
 							"name": "product",
